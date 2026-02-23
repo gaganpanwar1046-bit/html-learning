@@ -1,0 +1,110 @@
+/* Base window */
+QMainWindow, QWidget {
+    background-color: #0b1220;
+    color: #e5e7eb;
+    font-family: Segoe UI, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Menu bar */
+QMenuBar {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 8px;
+}
+
+QMenuBar::item:selected {
+    background: #1e293b;
+}
+
+/* Menus */
+QMenu {
+    background-color: #0b1220;
+    color: #e5e7eb;
+    border: 1px solid #1e293b;
+}
+
+QMenu::item:selected {
+    background-color: #1e293b;
+}
+
+/* Toolbar */
+QToolBar {
+    background-color: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Tables (Packet List, Packet Details) */
+QTableView {
+    background-color: #020617;
+    color: #e5e7eb;
+    gridline-color: #1e293b;
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #0b1220;
+    color: #cbd5f5;
+    padding: 4px;
+    border: 1px solid #1e293b;
+}
+
+/* Tree views */
+QTreeView {
+    background-color: #020617;
+    color: #e5e7eb;
+    selection-background-color: #1e293b;
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #020617;
+    width: 10px;
+    height: 10px;
+}
+
+QScrollBar::handle {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+    background: #334155;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1e293b;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #1e293b;
+}
+
+QPushButton:pressed {
+    background-color: #334155;
+}
+
+/* Input fields */
+QLineEdit, QTextEdit {
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+/* Status bar */
+QStatusBar {
+    background-color: #020617;
+    color: #cbd5f5;
+}

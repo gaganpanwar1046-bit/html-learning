@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IDS Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #020617;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-card {
+      background: #0b1220;
+      padding: 25px 30px;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      text-align: center;
+      color: #e5e7eb;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #1e293b;
+      background: #020617;
+      color: #e5e7eb;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      background: #2563eb;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .error {
+      color: #f87171;
+      font-size: 13px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <h2>IDS Login</h2>
+
+    <form method="POST">
+      <label>Username</label>
+      <input type="text" name="username" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>
